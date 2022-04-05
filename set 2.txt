@@ -1,0 +1,22 @@
+CREATE DATABASE AISS;
+
+
+ USE AISS;
+
+CREATE TABLE Employee (ENO VARCHAR(8) primary key,ENAME VARCHAR(20) NOT NULL, SALARY INT(4), BONUS FLOAT(5,2),DATE_OF_JOIN DATE);
+
+ INSERT INTO Employee VALUES('E01',"RamMehta",35000,NULL,'2020-11-02');
+INSERT INTO Employee VALUES('E02',"ShyamSahay",55000,32.34,'2008-03-16');
+INSERT INTO Employee VALUES('E04',"Neena Gupta",85000,28.54,'1993-11-30');
+INSERT INTO Employee VALUES('E04',"Neena Gupta",85000,28.54,'1993-11-30');
+ INSERT INTO Employee VALUES('E05',"GautamSingh",24000,NULL,'2020-09-30');
+INSERT INTO Employee VALUES('E06',"Tez Singh",75000,22.47,'1985-07-25');
+INSERT INTO Employee VALUES('E07',"ReemaSaxena",55000,NULL,'2020-10-30');
+
+select * from Employee;
+
+(i) select ENAME ,ROUND(BONUS) from Employee;
+(ii) select dayname(DATE_OF_JOIN) from Employee;
+(iii) select monthname(DATE_OF_JOIN) from Employee;
+(iv) 
+(v) UPDATE Employee SET SALARY=SALARY+(SALARY*10/100);

@@ -18,5 +18,5 @@ select * from Employee;
 (i) select ENAME ,ROUND(BONUS) from Employee;
 (ii) select dayname(DATE_OF_JOIN) from Employee;
 (iii) select monthname(DATE_OF_JOIN) from Employee;
-(iv) 
+(iv) SELECT * FROM Employee group by ENAME having BONUS IS NULL;
 (v) UPDATE Employee SET SALARY=SALARY+(SALARY*10/100);
